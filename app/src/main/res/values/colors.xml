@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DonateDrop brand red -->
+    <color name="donateDropRed">#E53935</color>
+
+    <!-- Common whites/blacks -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- If you need grays for text or icons -->
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#9E9E9E</color>
+    <color name="gray_dark">#616161</color>
+
+    <color name="navy_dark">#1A2A4A</color> <!-- for headlines/text -->
+    <!-- for subtitle text -->
+
+    <color name="dd_red_500">#FF4A4A</color>
+    <color name="dd_red_700">#D32F2F</color>
+    <color name="dd_gray_100">#F5F5F5</color>
+    <color name="dd_gray_300">#E0E0E0</color>
+    <color name="dd_gray_600">#757575</color>
+    <color name="dd_gray_900">#212121</color>
+    <color name="dd_white">#FFFFFF</color>
+
+    <color name="primary_red">#E53935</color>
+    <color name="primary_red_variant">#B71C1C</color>
+    <color name="on_primary_red">#FFFFFF</color>
+    <color name="success_green">#4CAF50</color>
+    <color name="light_green">#CCFAB2</color>
+    <color name="on_success_green">#FFFFFF</color>
+
+    <color name="donate_red">#D32F2F</color>
+    <color name="donate_red_dark">#B71C1C</color>
+    <color name="gray_600">#757575</color>
+
+    <color name="otp_box_stroke">#CCCCCC</color>
+    <color name="colorPrimary">#D32F2F</color> <!-- example red -->
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorAccent">#D32F2F</color>
+
+    <color name="urgentBackground">#FFEBEE</color>  <!-- light red background for urgent card header or indicator -->
+    <color name="standardBackground">#FFFFFF</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="buttonText">#FFFFFF</color>
+
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="background">#F5F5F5</color>
+    <color name="statusCompleted">#4CAF50</color>
+
+    <color name="colorPrimaryy">#B71C1C</color>              <!-- deep red -->
+    <color name="colorPrimaryVariant">#7F0000</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#FFCDD2</color>            <!-- light red/pink -->
+    <color name="colorOnSecondary">#000000</color>
+    <color name="HeaderText">#757575</color>    <!-- grey for headers -->
+    <color name="TitleText">#212121</color>     <!-- dark text -->
+    <color name="SubtitleText">#616161</color>  <!-- secondary text -->
+    <color name="highPriorityText">#D32F2F</color>          <!-- red for high priority label -->
+    <color name="chipBackground">#E57373</color>            <!-- for badge like A+ -->
+    <color name="backgroundtwo">#FFFFFF</color>
+
+    <color name="colorPrimaryDarkk">#C62828</color>
+    <color name="colorAccentt">#FFCDD2</color> <!-- light red/pink -->
+    <color name="grayLight">#F5F5F5</color>
+    <color name="divider">#E0E0E0</color>
+
+    <color name="colorrPrimary">#E53935</color>
+    <color name="colorrPrimaryDark">#C62828</color>
+    <color name="colorrAccent">#FB8C00</color>
+    <color name="colorPrimaryLight">#FFEBEE</color>
+
+    <color name="red">#E53935</color>
+    <color name="gray">#757575</color>
+    <color name="amber">#FFB300</color>
+    <color name="bg_light">#F7F7FB</color>
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#8A8A8A</color>
+
+    <color name="centerColor">#E74C3C</color>
+</resources>

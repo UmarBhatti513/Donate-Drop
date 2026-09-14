@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Top toolbar with back arrow -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dd_red_700"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="Contact Details"
+        app:titleTextColor="@android:color/white"
+        app:titleMarginStart="70dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="16dp"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Avatar -->
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bg_profile_circle"
+                app:contentDescription="null"
+                android:scaleType="centerCrop"
+                app:cardCornerRadius="48dp"/>
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Junaid Malik"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/colorrPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"/>
+
+            <!-- Blood group badge -->
+            <TextView
+                android:id="@+id/tvBloodGroup"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="B+"
+                android:textColor="@color/primary_red"
+                android:background="@drawable/bg_circle_light"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Location & last donated -->
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Karachi, Pakistan"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="4dp"
+                android:textColor="@color/gray_dark"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvLastDonated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last donated 2 months ago"
+                android:textColor="@color/gray_medium"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"/>
+
+            <!-- Contact card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:divider="@color/gray_light"
+                    android:showDividers="middle">
+
+                    <!-- Phone row -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_phone"
+                            app:tint="@color/colorrPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/tvPhone"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="+92 330 3796 566"
+                            android:layout_marginStart="12dp"/>
+
+                        <Button
+                            android:id="@+id/btnCall"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Call"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/red"/>
+                    </LinearLayout>
+
+                    <!-- Email row -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/email"
+                            app:tint="@color/colorrPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="junaidmalik92@email.com"
+                            android:layout_marginStart="12dp"/>
+
+                        <Button
+                            android:id="@+id/btnEmail"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"/>
+                    </LinearLayout>
+
+                    <!-- WhatsApp row -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/chat"/>
+
+                        <TextView
+                            android:id="@+id/tvWhatsapp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="+92 330 3796 566"
+                            android:layout_marginStart="12dp"/>
+
+                        <Button
+                            android:id="@+id/btnChat"
+                            style="@style/Widget.MaterialComponents.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chat"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Disclaimer -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"
+                android:background="@color/chipBackground"
+                android:text="Please use these contact details responsibly. Only contact donors for genuine blood donation needs. Abuse may result in removal from DonateDrop."
+                android:textColor="@color/colorrPrimaryDark"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

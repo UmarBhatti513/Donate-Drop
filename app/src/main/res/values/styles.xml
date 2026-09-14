@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.DonateDrop.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/donateDropRed</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/donateDropRed</item>
+        <item name="windowActionBarOverlay">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+    <style name="RoundedButton">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="DDOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <!-- strokeWidth, strokeColor and cornerRadius are Material attributes, not android: ones -->
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/dd_gray_300</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textColor">@color/dd_gray_900</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/donate_red</item>
+        <item name="hintTextColor">@color/gray_600</item>
+        <!-- etc. -->
+    </style>
+
+    <!-- inside <resources> -->
+    <style name="CircleImage">
+        <!-- cornerSize accepts percentage like "50%" to make fully circular -->
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="OtpEditTextStyle">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:background">@drawable/otp_box_background</item>
+        <item name="android:textColor">@android:color/black</item>
+        <!-- disable suggestions -->
+        <item name="android:importantForAutofill" tools:targetApi="26">no</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize as needed -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="windowActionBarOverlay">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+
+</resources>

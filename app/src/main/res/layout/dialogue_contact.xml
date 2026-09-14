@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="?attr/colorSurface">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Receiver"
+        android:textSize="16dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingBottom="0dp" />
+
+
+    <TextView
+        android:id="@+id/dialog_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name Placeholder"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingTop="0dp" />
+
+
+    <TextView
+        android:id="@+id/dialog_tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+92 300 1234567"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:paddingTop="0dp" />
+
+    <!-- Buttons row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="4dp">
+
+        <!-- optional Claim button (comment out from XML if you don't want it) -->
+        <Button
+            android:id="@+id/dialog_btn_claim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respond"
+            android:textSize="11dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/dialog_btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:textSize="11dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/dialog_btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textSize="11dp"/>
+
+    </LinearLayout>
+</LinearLayout>

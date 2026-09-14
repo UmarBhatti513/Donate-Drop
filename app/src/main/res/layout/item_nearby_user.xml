@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_profile_circle"
+            android:layout_centerVertical="true"
+            app:cardCornerRadius="24dp"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgAvatar"
+            android:layout_marginStart="12dp"
+            android:text="Ayesha Tariq"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/dd_red_700"/>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_toEndOf="@id/imgAvatar"
+            android:layout_marginStart="12dp"
+            android:text=" 2.0 km away"
+            android:textSize="12sp"
+            android:textColor="@color/primary_red"/>
+
+        <TextView
+            android:id="@+id/tvBlood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDistance"
+            android:layout_toEndOf="@id/imgAvatar"
+            android:layout_marginStart="12dp"
+            android:text="A+"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/dd_red_700"/>
+
+        <TextView
+            android:id="@+id/tvAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tvBlood"
+            android:layout_below="@id/tvDistance"
+            android:text="Available"
+            android:layout_marginStart="20dp"
+            android:textSize="10sp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/success_green"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/btnContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Contact"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:backgroundTint="@color/primary_red"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

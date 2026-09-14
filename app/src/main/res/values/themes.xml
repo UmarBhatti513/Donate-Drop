@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DonateDrop" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.DonateDrop" parent="Theme.MaterialComponents.DayNight.NoActionBar" tools:ignore="DuplicateDefinition">
+        <!-- primary color for toolbar, etc. -->
+        <item name="colorPrimary">@color/dd_red_500</item>
+        <item name="colorOnPrimary">@color/dd_white</item>
+        <item name="colorSecondary">@color/dd_red_700</item>
+        <item name="android:fontFamily">@font/k2d_bold</item>
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary_red</item>
+        <item name="colorPrimaryVariant">@color/primary_red_variant</item>
+        <item name="colorOnPrimary">@color/on_primary_red</item>
+        <!-- Secondary / accent -->
+        <item name="colorSecondary">@color/success_green</item>
+        <item name="colorOnSecondary">@color/on_success_green</item>
+        <!-- Toolbar uses surface by default in NoActionBar; ensure surface is white or as desired -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <!-- Background: default or customize -->
+        <item name="android:statusBarColor">@color/white</item>
+        <!-- Primary brand color -->
+        <item name="colorPrimary">#D32F2F</item>       <!-- a deep red for DonateDrop -->
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary / accent if needed -->
+        <item name="colorSecondary">#B71C1C</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <!-- TextInputLayout outline style -->
+        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button</item>
+        <!-- Shape customization if desired -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.DonateDrop.Corner</item>
+    </style>
+
+    <style name="ShapeAppearance.DonateDrop.Corner" parent="">
+        <!-- you can leave parent empty or inherit from a Material shapeAppearance if desired -->
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!-- res/menu/bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_requests"
+        android:icon="@drawable/requests"
+        android:title="Requests" />
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/history"
+        android:title="History" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
+</menu>
+

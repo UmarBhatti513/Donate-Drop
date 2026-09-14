@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- AppBar with back arrow -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarAbout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorrPrimary"
+        app:titleMarginStart="150dp"
+        app:title="About "
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="0dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <!-- App Logo -->
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/divbox"
+                android:contentDescription="@string/app_name"/>
+
+            <!-- App name & version -->
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="DonateDrop"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/dd_red_700"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:textSize="24dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Version 1.0.0"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/chipBackground"
+                android:textSize="12dp"/>
+
+            <!-- Description card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:backgroundTint="@color/centerColor"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:textAlignment="center"
+                    android:text="DonateDrop connects heroes like you with people in urgent need of blood. Our mission is to make lifesaving blood donations easy, safe, and accessible for everyone. We believe every drop counts."
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Key Features -->
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Key Features"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textColor="@color/dd_red_700"
+                android:textSize="16dp"/>
+
+            <!-- Feature list -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <!-- Item 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/feature_request"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:layout_gravity="center"
+                        android:text="Easy blood request &amp; donation process"
+                        style="@style/TextAppearance.MaterialComponents.Body2"
+                        android:textColor="@color/colorrPrimaryDark"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+
+                <!-- Item 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/feature_matching"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:text="Community-driven donor matching"
+                        style="@style/TextAppearance.MaterialComponents.Body2"
+                        android:textColor="@color/colorrPrimaryDark"/>
+                </LinearLayout>
+
+                <!-- Item 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/feature_verified"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:text="Verified donor profiles for safe giving"
+                        style="@style/TextAppearance.MaterialComponents.Body2"
+                        android:textColor="@color/colorrPrimaryDark"/>
+                </LinearLayout>
+
+                <!-- Item 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/feature_history"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:text="Donation history &amp; reminders"
+                        style="@style/TextAppearance.MaterialComponents.Body2"
+                        android:textColor="@color/colorrPrimaryDark"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Developers"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textColor="@color/dd_red_700"
+                android:textSize="16dp"/>
+            <!-- Developer cards (stacked vertically: one on top of the other) -->
+            <LinearLayout
+                android:id="@+id/developers_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp">
+
+                <!-- Developer 1 (full width) -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:padding="12dp">
+
+                    <!-- Vertical container so image is above the texts -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/card_gradient"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp">
+
+                        <!-- Photo centered -->
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/dev_img"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/bg_circle_light"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="4dp"
+                            app:shapeAppearanceOverlay="@style/CircleImage" />
+
+                        <!-- Name (centered) -->
+                        <TextView
+                            android:id="@+id/dev_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Muhammad Umar Bhatti"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"/>
+
+                        <!-- Role / sub-title (centered) -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Android Developer"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"/>
+
+                        <!-- Info (centered, can wrap) -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Built core app features, data sync, Auth, Firestore, Cloud Functions, Cloudinary, Push notifications"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!-- Developer 2 (full width) -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:padding="12dp">
+
+                    <!-- Vertical container so image is above the texts -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="@drawable/card_gradient"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp">
+
+                        <!-- Photo centered -->
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/dev_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/bg_circle_light"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="4dp"
+                            app:shapeAppearanceOverlay="@style/CircleImage" />
+
+                        <!-- Name (centered) -->
+                        <TextView
+                            android:id="@+id/dev_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Javeriya Jaweed"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"/>
+
+                        <!-- Role / sub-title (centered) -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="UI/UX Designer"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"/>
+
+                        <!-- Info (centered, can wrap) -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Designed app flows, hi-fi screens &amp; style guide, Implemented XML layouts and assisted in front-end coding."
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+            <!-- Contact & Support card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:backgroundTint="@color/centerColor"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:padding="4dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Contact &amp; Support"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="3dp"/>
+
+                    <!-- Email -->
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_mail"
+                            app:tint="@color/white"/>
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:text="donatedropapp@gmail.com"
+                            style="@style/TextAppearance.MaterialComponents.Body2"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:text="© 2025 DonateDrop. All rights reserved."
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/colorrPrimaryDark"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

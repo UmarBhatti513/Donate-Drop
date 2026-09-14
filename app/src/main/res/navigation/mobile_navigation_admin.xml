@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_admin"
+    app:startDestination="@id/nav_admin_home">
+
+    <fragment
+        android:id="@+id/nav_admin_home"
+        android:name="com.example.donatedrop.ui.home.AdminHome"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_admin_home" >
+        <action
+            android:id="@+id/action_adminHome_to_admin_settings"
+            app:destination="@id/nav_admin_settings" />
+        <action
+            android:id="@+id/action_adminHome_to_admin_analytics"
+            app:destination="@id/nav_admin_analytics" />
+        <action
+            android:id="@+id/action_adminHome_to_admin_users"
+            app:destination="@id/nav_admin_users" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_admin_users"
+        android:name="com.example.donatedrop.ui.requests.AdminUsers"
+        android:label="@string/title_users"
+        tools:layout="@layout/fragment_admin_users" >
+
+        <action
+            android:id="@+id/action_admin_users_to_admin_settings"
+            app:destination="@id/nav_admin_settings" />
+        <action
+            android:id="@+id/action_admin_users_to_adminHome"
+            app:destination="@id/nav_admin_home" />
+        <action
+            android:id="@+id/action_admin_users_to_admin_analytics"
+            app:destination="@id/nav_admin_analytics" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_admin_analytics"
+        android:name="com.example.donatedrop.ui.history.AdminAnalytics"
+        android:label="@string/title_analytics"
+        tools:layout="@layout/fragment_admin_analytics" >
+
+        <action
+            android:id="@+id/action_admin_analytics_to_adminHome"
+            app:destination="@id/nav_admin_home" />
+        <action
+            android:id="@+id/action_admin_analytics_to_admin_settings"
+            app:destination="@id/nav_admin_settings" />
+        <action
+            android:id="@+id/action_admin_analytics_to_admin_users"
+            app:destination="@id/nav_admin_users" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_admin_settings"
+        android:name="com.example.donatedrop.ui.settings.AdminSettings"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_admin_settings" >
+
+        <action
+            android:id="@+id/action_admin_settings_to_admin_analytics"
+            app:destination="@id/nav_admin_analytics" />
+        <action
+            android:id="@+id/action_admin_settings_to_adminHome2"
+            app:destination="@id/nav_admin_home" />
+        <action
+            android:id="@+id/action_admin_settings_to_admin_users"
+            app:destination="@id/nav_admin_users" />
+    </fragment>
+</navigation>

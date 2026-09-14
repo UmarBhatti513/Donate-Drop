@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- 20% opacity of your dd_red_500 (#FF4A4A) → #33FF4A4A -->
+    <solid android:color="#33FF4A4A"/>
+</shape>
